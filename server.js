@@ -5,8 +5,8 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-const VERIFY_TOKEN = "MySuperSecretToken123!";
-const MAKE_WEBHOOK_URL = "https://hook.make.com/your-make-webhook";
+const VERIFY_TOKEN = "12345";
+const MAKE_WEBHOOK_URL = "https://hook.eu2.make.com/r4b5a6yuw5yodscf78cs4t2w1x3sqoly";
 
 app.get("/webhook", (req, res) => {
   const mode = req.query["hub.mode"];
